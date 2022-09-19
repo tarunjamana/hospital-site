@@ -26,6 +26,25 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+        <!--Data Layer to enable rich data collection and targeting-->
+        <script>
+            var digitalData = {
+                "page": {
+                    "pageInfo" : {
+                        "pageName": "Home"
+                        }
+                    }
+            };
+            </script>
+            <!--/Data Layer-->
+            <!--jQuery or other helper libraries-->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <!--/jQuery-->
+            <!--prehiding snippet for Adobe Target with asynchronous tags deployment-->
+            <script>
+                (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+            </script>
+            <!--/prehiding snippet for Adobe Target with asynchronous tags deployment-->
         <!--Tags Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
         <script src="https://assets.adobedtm.com/6268dc4b6b26/f9395fd14802/launch-2dbb7b1d2abc-development.min.js" async></script>
         <!--/Tags Header Embed Code-->
